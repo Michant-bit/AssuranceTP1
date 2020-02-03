@@ -1,10 +1,20 @@
 package TP1;
 
 public class CV {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	String nom;
+	String prenom;
+	String formation;
+	int experiencesTravail;
+	String[] competences;
+	String attentes;
+	
+	public CV() {
+		
 	}
-
+	
+	public CV(String nom, String prenom, String formation, int experiancesTravail, String[] competences, String attentes) {
+		
+	}
+	
 }
