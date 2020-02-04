@@ -6,14 +6,14 @@ public class CV {
 	String prenom;
 	String formation;
 	int experiencesTravail;
-	String competences;
+	String[] competences = new String[3];
 	String attentes;
 	
 	public CV() {
 		
 	}
 	
-	public CV(String nom, String prenom, String formation, int experiancesTravail, String competences, String attentes) {
+	public CV(String nom, String prenom, String formation, int experiancesTravail, String[] competences, String attentes) {
 		
 		this.nom = nom;
 		this.prenom = prenom;
@@ -29,9 +29,16 @@ public class CV {
 		System.out.println("Nom : " + cv.nom + "\n" +
 						   "Prenom : " + cv.prenom + "\n" +
 						   "Formation : " + cv.formation + "\n" +
-						   "Expériances de travail : " + cv.experiencesTravail + "\n" +
-						   "Compétences : " + cv.competences + "\n" +
-						   "Attentes : " + cv.attentes);
+						   "Expériances de travail : " + cv.experiencesTravail);
+		
+		for (int i = 0; i < cv.competences.length; i++) {
+			System.out.println("Compétence " + (i + 1) + " : " + cv.competences[i]);
+		}
+		
+		System.out.println("Attentes : " + cv.attentes + "\n");
+		
+		
+						   
 		
 	}
 	
