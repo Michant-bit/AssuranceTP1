@@ -4,23 +4,27 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		String[] etudiant1 = {"a","b","c"};
+		String[] etudiant1 = {"Java","c#","HTML"};
+		String[] etudiant2 = {"Java","c#","HTML"};
+		String[] etudiant3 = {"Java","c#","HTML"};
 		
-		afficherCV(etudiant1);
+		afficherCV(etudiant1, etudiant2, etudiant3);
 		
 	}
 	
-	private static void afficherCV(String[] etudiant1) {
+	private static void afficherCV(String[] etudiant1, String[] etudiant2, String[] etudiant3) {
 		
-		CV cv = new CV("La BoissiËre", "Antoine", "…tudiant", 1, etudiant1, "Rien")  ;
+		System.out.println("Bienvenue  chez  Barette!\n" );
 		
-		cv.affiche(cv);
-		
-		//cv = new CV("La BoissiËre", "Antoine", "…tudiant", 1, "Sup", "Rien");
+		CV cv = new CV("La Boissi√®re", "Antoine", "√âtudiant", 2, etudiant1, "Aucun")  ;
 		
 		cv.affiche(cv);
 		
-		//cv = new CV("La BoissiËre", "Antoine", "…tudiant", 1, "Sup", "Rien");
+		cv = new CV("Linh", "Kenny", "√âtudiant", 2, etudiant2, "Aucun");
+		
+		cv.affiche(cv);
+		
+		cv = new CV("Arab", "Fr√©d√©ric", "√âtudiant", 2, etudiant3, "J'ai h√¢te d'apprendre avec vous");
 		
 		cv.affiche(cv);
 		
